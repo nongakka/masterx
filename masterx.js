@@ -139,11 +139,6 @@ if(embedMatch){
   embed = embedMatch[0]
   console.log("🎬 embed:", embed)
 }
-
-if(embedMatch){
-  embed = embedMatch[0]
-}
-
   if(!embed){
 
   // หา m3u8 ใน script ของหน้า episode
@@ -612,7 +607,7 @@ servers = await siteHandler.getServers(epLink);
           );
         }
 
-        await randomDelay(50,150);
+        await randomDelay(120,300);
       }
 
     }
@@ -765,4 +760,5 @@ process.exit(0);
 
 
 })();
+
 
