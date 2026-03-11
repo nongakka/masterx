@@ -6,7 +6,7 @@ const { execSync } = require("child_process");
 
 const categories = JSON.parse(fs.readFileSync("categories.json"));
 
-const TEST_MODE = true;
+const TEST_MODE = false;
 
 
 
@@ -754,5 +754,6 @@ console.log(e)
 clearInterval(autoSave);
 }
 process.exit(0);
+
 
 })();
