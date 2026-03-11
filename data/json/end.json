@@ -8604,5 +8604,26 @@
         ]
       }
     ]
+  },
+  {
+    "title": "Mayonaka Heart Tune จูนเสียงใจไปสุดฝัน ตอนที่ 1-10 ซับไทย",
+    "link": "https://www.anime-masterx.com/mayonaka-heart-tune",
+    "image": "https://www.anime-masterx.com/upload/mayonaka-heart-tune.jpg?v=99",
+    "episodes": [
+      {
+        "name": "Mayonaka Heart Tune จูนเสียงใจไปสุดฝัน ตอนที่ 1 ซับไทย",
+        "link": "https://www.anime-masterx.com/mayonaka-heart-tune-ep-1",
+        "servers": [
+          {
+            "name": "720p",
+            "url": "https://stream.animexd-master.xyz/qualitys/IQDqNGYNBq/720/"
+          },
+          {
+            "name": "360p",
+            "url": "https://stream.animexd-master.xyz/qualitys/IQDqNGYNBq/360/"
+          }
+        ]
+      }
+    ]
   }
 ]
