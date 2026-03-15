@@ -373,7 +373,8 @@ console.log("📚 จำนวนหน้าทั้งหมด:", lastPage)
 let finished = false;
 let episodeCounter = 0;
 let emptyPageCount = 0;
-
+let newEpisodeAdded = false;
+	
 //LOOP
 
 for (let page = startPage; page <= (TEST_MODE ? 1 : lastPage); page++) {
@@ -523,7 +524,7 @@ servers = await siteHandler.getServers(epLink);
           link: epLink,
           servers
         });
-
+newEpisodeAdded = true;
         episodeCounter++;  
 
        // if (episodeCounter % 50 === 0) {
