@@ -501,7 +501,14 @@ fs.writeFileSync("debug_detail.html", detailHtml);
         const $a = $detail(el2);
 
         let epLink = normalizeUrl($a.attr("href"));
-        if (!epLink) continue;
+		if (!epLink) continue;
+
+// กรองลิงก์ที่ไม่ใช่ตอน
+if (
+  epLink.includes("facebook.com") ||
+  epLink.includes("#") ||
+  epLink.includes("comment")
+) continue;
 	
 	epCount++
 	if(TEST_MODE && epCount > 1) break
