@@ -435,12 +435,7 @@ console.log("article found:", articles.length);
     console.log("หยุด scraper เพราะเจอหน้าว่าง 3 หน้า");
 
     finished = true;
-
-    fs.writeFileSync(
-      progressFile,
-      JSON.stringify({ page: page })
-    );
-
+ 
     break;
   }
 
