@@ -374,17 +374,6 @@ let finished = false;
 let episodeCounter = 0;
 let emptyPageCount = 0;
 
-//save auto
-const autoSave = setInterval(()=>{
-  if(currentData.length > 0){
-    fs.writeFileSync(
-      currentFilePath,
-      JSON.stringify(currentData,null,2)
-    );
-    console.log("💾 Auto save");
-  }
-}, 5*60*1000);
-
 //LOOP
 
 for (let page = startPage; page <= (TEST_MODE ? 1 : lastPage); page++) {
@@ -474,7 +463,7 @@ if (movie && movie.episodes && movie.episodes.length > 0) {
 
         currentData.push(movie);
         oldMap.set(link, movie);
-        saveData();
+        
       }
 
       const { data: detailHtml } =
@@ -699,7 +688,7 @@ console.log("⚠️ build m3u error")
 console.log(e)
 
 }
-clearInterval(autoSave);
+
 }
 process.exit(0);
 
