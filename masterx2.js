@@ -110,10 +110,8 @@ const SiteHandlers = {
 
     episodeSelectors: [
   "a[href*='-ep-']",
-  "a[href*='episode']",
-  ".entry-content a",
-  ".wp-block-button a",
-  ".btn a"
+  "a[href*='/ep']",
+  ".entry-content a[href*='ep']"
 ],
 async getServers(epUrl){
 
