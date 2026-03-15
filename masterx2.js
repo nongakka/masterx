@@ -540,9 +540,7 @@ servers = await siteHandler.getServers(epLink);
           servers
         });
 
-        episodeCounter++;
-
-        saveData();
+        episodeCounter++;  
 
        // if (episodeCounter % 50 === 0) {
 
